@@ -1,9 +1,48 @@
 object FormMain: TFormMain
-  Left = 652
-  Height = 240
-  Top = 569
+  Left = 400
+  Height = 300
+  Top = 192
   Width = 320
   Caption = 'FormMain'
+  ClientHeight = 300
+  ClientWidth = 320
   OnCreate = FormCreate
   LCLVersion = '2.2.6.0'
+  object LabelInput: TLabel
+    Left = 8
+    Height = 17
+    Top = 12
+    Width = 61
+    Caption = 'LabelInput'
+    ParentColor = False
+  end
+  object Input: TMemo
+    Left = 8
+    Height = 252
+    Top = 40
+    Width = 144
+    Lines.Strings = (
+      'Input'
+    )
+    TabOrder = 0
+  end
+  object InputMemo: TMemo
+    Left = 160
+    Height = 252
+    Top = 40
+    Width = 152
+    Lines.Strings = (
+      'InputMemo'
+    )
+    OnChange = InputMemoChange
+    TabOrder = 1
+  end
+  object ButtonCalculate: TButton
+    Left = 237
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = '计算'
+    TabOrder = 2
+  end
 end
